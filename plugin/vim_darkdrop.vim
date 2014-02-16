@@ -8,18 +8,15 @@ python sys.path.append(vim.eval('expand("<sfile>:h")'))
 " --------------------------------
 "  Function(s)
 " --------------------------------
-function! TemplateExample()
+function! DarkDropFile()
 python << endOfPython
 
-from vim_darkdrop import vim_darkdrop_example
-
-for n in range(5):
-    print(vim_darkdrop_example())
-
+from vim_darkdrop import *
+DarkDropFile()
 endOfPython
 endfunction
 
 " --------------------------------
 "  Expose our commands to the user
 " --------------------------------
-command! Example call TemplateExample()
+command! DarkDrop call DarkDropFile()
