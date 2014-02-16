@@ -1,14 +1,16 @@
-import gnupg
+from crypto_functions import *
+import hashlib
+import vim
 
 def DarkDropFile():
-    gpg = gnupg.GPG(gnupghome='/home/asiradas/.securenotes')
+    password = 'testpassword'
+    key = hashlib.sha256(password).digest()
 
-    if not gpg.list_keys():
-        key = gpg.gen_key(str(gpg.gen_key_input()))
-    else:
-        key = gpg.list_keys()[0]['fingerprint']
+    filename = str(random.randint(0, 0xFF)) + '.tmp'
+    noteDump = open(filename, 'w')
+    noteDump.write('\n'.join(vim.current.buffer))
 
-    importResult = gpg.import_keys(str(key))
+    encrypt_file(key, filename);
+    os.remove(os.path.abspath(filename))
+    noteDump.close()
 
-    text = vim.current.buffer.range('1','$')
-    print text.start
