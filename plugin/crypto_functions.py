@@ -1,3 +1,5 @@
+#crypto_functions courtesy of [Eli Bendesky](http://eli.thegreenplace.net)
+
 import os, random, struct
 from Crypto.Cipher import AES
 

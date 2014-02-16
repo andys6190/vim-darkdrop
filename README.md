@@ -1,5 +1,5 @@
 # vim-darkdrop
-
+crypto_functions courtesy of [Eli Bendesky](http://eli.thegreenplace.net)
 ## Installation
 
 Use your plugin manager of choice.
@@ -18,5 +18,6 @@ Use your plugin manager of choice.
 
 ## Todo
 
-1. Write a plugin
-2. Write documentation
+1. Add decrypt functionality
+2. Add browse functionality
+3. Write documentation

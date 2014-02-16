@@ -12,7 +12,7 @@ function! DarkDropFile()
 python << endOfPython
 
 from vim_darkdrop import *
-DarkDropFile()
+dark_drop_file()
 endOfPython
 endfunction
 
