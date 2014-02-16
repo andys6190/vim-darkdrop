@@ -1,0 +1,25 @@
+*vim-darkdrop.txt* A short multi line description of your plugin
+
+===============================================================================
+CONTENTS                                                         *vim-darkdrop*
+
+    1. Intro ............................................. |vim-darkdrop-intro|
+    2. Requirements ............................... |vim-darkdrop-requirements|
+    3. Usage ............................................. |vim-darkdrop-usage|
+    4. Licence ......................................... |vim-darkdrop-licence|
+===============================================================================
+1. Intro                                                   *vim-darkdrop-intro*
+
+Overview of plugin
+
+2. Requirements                                     *vim-darkdrop-requirements*
+
+What additional programs are required to run the plugin
+
+3. Usage                                                   *vim-darkdrop-usage*
+
+How to use the plugin. What functions does it give the user?
+
+4. Licence                                               *vim-darkdrop-licence*
+
+This is open source make sure to include a licence
